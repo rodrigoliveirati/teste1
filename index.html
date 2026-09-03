@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Principais comandos do GIT</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background: #f4f6f8;
+        color: #222;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      }
+
+      h1 {
+        text-align: center;
+        color: #2c3e50;
+      }
+
+      h2 {
+        color: #34495e;
+        border-bottom: 2px solid #eaeaea;
+        padding-bottom: 8px;
+        margin-top: 30px;
+      }
+
+      code {
+        background: #eef2f7;
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-family: Consolas, monospace;
+      }
+
+      ul {
+        line-height: 1.8;
+      }
+
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Principais comandos do GIT</h1>
+
+      <h2>Iniciando um repositório</h2>
+      <ul>
+        <li><code>git init</code> - Inicializa um repositório Git vazio na pasta atual.</li>
+        <li><code>git clone &lt;url&gt;</code> - Clona um repositório remoto para o computador local.</li>
+      </ul>
+
+      <h2>Verificando o estado</h2>
+      <ul>
+        <li><code>git status</code> - Mostra o estado dos arquivos e alterações no repositório.</li>
+        <li><code>git log</code> - Exibe o histórico de commits.</li>
+      </ul>
+
+      <h2>Adicionando e confirmando alterações</h2>
+      <ul>
+        <li><code>git add &lt;arquivo&gt;</code> - Adiciona arquivos na área de preparação.</li>
+        <li><code>git add .</code> - Adiciona todas as alterações da pasta atual.</li>
+        <li><code>git commit -m "mensagem"</code> - Salva as alterações com uma mensagem descritiva.</li>
+      </ul>
+
+      <h2>Trabalhando com branches</h2>
+      <ul>
+        <li><code>git branch</code> - Lista as branches existentes.</li>
+        <li><code>git checkout -b &lt;nome&gt;</code> - Cria e troca para uma nova branch.</li>
+        <li><code>git checkout &lt;nome&gt;</code> - Troca para uma branch existente.</li>
+        <li><code>git merge &lt;nome&gt;</code> - Junta alterações de uma branch em outra.</li>
+      </ul>
+
+      <h2>Sincronizando com repositórios remotos</h2>
+      <ul>
+        <li><code>git remote -v</code> - Mostra os repositórios remotos configurados.</li>
+        <li><code>git push origin &lt;branch&gt;</code> - Envia commits para o repositório remoto.</li>
+        <li><code>git pull origin &lt;branch&gt;</code> - Atualiza a branch local com as alterações do remoto.</li>
+      </ul>
+
+      <h2>Desfazendo alterações</h2>
+      <ul>
+        <li><code>git restore &lt;arquivo&gt;</code> - Descarta alterações em um arquivo.</li>
+        <li><code>git reset --hard HEAD</code> - Reverte todas as alterações locais para o último commit.</li>
+      </ul>
+
+      <h2>Visualizando diferenças</h2>
+      <ul>
+        <li><code>git diff</code> - Mostra diferenças entre arquivos alterados e a última versão.</li>
+      </ul>
+    </div>
+  </body>
+</html>
